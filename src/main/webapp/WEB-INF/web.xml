@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app>
+	<display-name>clothes</display-name>
+	<servlet>
+		<servlet-name>clothes-config</servlet-name>
+		<servlet-class>org.springframework.web.servlet.DispatcherServlet</servlet-class>
+		<load-on-startup>1</load-on-startup>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>clothes-config</servlet-name>
+		<url-pattern>/</url-pattern>
+	</servlet-mapping>
+	
+	<filter>
+		<filter-name>sitemesh</filter-name>
+		<filter-class>com.opensymphony.sitemesh.webapp.SiteMeshFilter</filter-class>
+		<init-param>
+			<param-name>contex-configLocation</param-name>
+			<param-value>/WEB-INF/clothes-config-servlet.xml</param-value>
+		</init-param>
+	</filter>
+	<filter-mapping>
+		<filter-name>sitemesh</filter-name>
+		<url-pattern>/*</url-pattern>
+	</filter-mapping>
+	<dependency>  
+    <groupId>org.springframework</groupId>  
+    <artifactId>spring-webmvc</artifactId>  
+    <version>5.1.1.RELEASE</version>  
+</dependency>  
+  
+    <!-- https://mvnrepository.com/artifact/javax.servlet/javax.servlet-api -->  
+<dependency>    
+    <groupId>javax.servlet</groupId>    
+    <artifactId>servlet-api</artifactId>    
+    <version>3.0-alpha-1</version>    
+</dependency>  
+  
+    <!-- https://mvnrepository.com/artifact/javax.servlet/jstl -->  
+<dependency>  
+    <groupId>javax.servlet</groupId>  
+    <artifactId>jstl</artifactId>  
+    <version>1.2</version>  
+</dependency>  
+<!-- https://mvnrepository.com/artifact/org.apache.tomcat/tomcat-jasper -->  
+<dependency>  
+    <groupId>org.apache.tomcat</groupId>  
+    <artifactId>tomcat-jasper</artifactId>  
+    <version>9.0.12</version>  
+</dependency>  
+</web-app>

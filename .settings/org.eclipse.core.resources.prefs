@@ -1,0 +1,6 @@
+eclipse.preferences.version=1
+encoding//src/main/java/Clothes/Controller/UserController.java=UTF-8
+encoding//src/main/webapp/WEB-INF/views/layouts/user/header.jsp=UTF-8
+encoding//src/main/webapp/WEB-INF/views/user/cart/ListCart.jsp=UTF-8
+encoding//src/main/webapp/WEB-INF/views/user/products/Detail.jsp=UTF-8
+encoding//src/main/webapp/WEB-INF/views/user/products/product.jsp=UTF-8
